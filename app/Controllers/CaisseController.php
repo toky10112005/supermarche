@@ -61,7 +61,7 @@ class CaisseController extends BaseController
         $idCaisse = (int) $this->request->getPost('id_caisse');
 
         if ($idCaisse <= 0) {
-            return redirect()->to('/')->with('error', 'Veuillez sélectionner une caisse.');
+            return redirect()->to('/')->with('error', 'Veuillez selectionner une caisse.');
         }
 
         $model  = new CaisseModel();
@@ -119,7 +119,7 @@ class CaisseController extends BaseController
         $quantite  = (int) $this->request->getPost('quantite');
 
         if ($idProduit <= 0 || $quantite <= 0) {
-            return redirect()->to('/achats')->with('error', 'Produit ou quantité invalide.');
+            return redirect()->to('/achats')->with('error', 'Produit ou quantite invalide.');
         }
 
         $produitModel = new ProduitModel();
@@ -145,7 +145,7 @@ class CaisseController extends BaseController
             'quantite_stock' => $produit['quantite_stock'] - $quantite,
         ]);
 
-        return redirect()->to('/achats')->with('success', 'Achat enregistré avec succès.');
+        return redirect()->to('/achats')->with('success', 'Achat enregistre avec succes.');
     }
 
     public function cloturerAchat()
@@ -163,7 +163,7 @@ class CaisseController extends BaseController
         $achatModel = new AchatModel();
         $achatModel->cloturerAchatsByCaisse((int) $caisse['id_caisse']);
 
-        return redirect()->to('/achats')->with('success', 'Achat clôturé. Prêt pour le prochain client.');
+        return redirect()->to('/achats')->with('success', 'Achat cloture. Pret pour le prochain client.');
     }
 
     public function logout()
