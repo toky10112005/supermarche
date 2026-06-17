@@ -1,0 +1,335 @@
+ERROR - 2026-06-17 06:40:40 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:111
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(111): SQLite3->__construct('D:\\Systeme-d'In...')
+#1 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#2 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" F...')
+#5 D:\Systeme-d'Info\supermarche\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 D:\Systeme-d'Info\supermarche\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#7 D:\Systeme-d'Info\supermarche\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:table', Array)
+#8 D:\Systeme-d'Info\supermarche\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 D:\Systeme-d'Info\supermarche\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 D:\Systeme-d'Info\supermarche\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" F...')
+#4 D:\Systeme-d'Info\supermarche\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\Systeme-d'Info\supermarche\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 D:\Systeme-d'Info\supermarche\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 D:\Systeme-d'Info\supermarche\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 D:\Systeme-d'Info\supermarche\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 D:\Systeme-d'Info\supermarche\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-06-17 06:40:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table/caisse]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" FROM "SQLITE_MASTER" WHERE "TYPE" = \'table\' AND "NAME" NOT LIKE \'sqlite!_%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 7 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-06-17 06:42:04 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:111
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(111): SQLite3->__construct('D:\\Systeme-d'In...')
+#1 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#2 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" F...')
+#5 D:\Systeme-d'Info\supermarche\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 D:\Systeme-d'Info\supermarche\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#7 D:\Systeme-d'Info\supermarche\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:table', Array)
+#8 D:\Systeme-d'Info\supermarche\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 D:\Systeme-d'Info\supermarche\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 D:\Systeme-d'Info\supermarche\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" F...')
+#4 D:\Systeme-d'Info\supermarche\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\Systeme-d'Info\supermarche\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 D:\Systeme-d'Info\supermarche\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 D:\Systeme-d'Info\supermarche\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 D:\Systeme-d'Info\supermarche\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 D:\Systeme-d'Info\supermarche\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-06-17 06:42:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table/caisse]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" FROM "SQLITE_MASTER" WHERE "TYPE" = \'table\' AND "NAME" NOT LIKE \'sqlite!_%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 7 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-06-17 06:48:13 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:111
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(111): SQLite3->__construct('D:\\Systeme-d'In...')
+#1 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#2 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 D:\Systeme-d'Info\supermarche\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 D:\Systeme-d'Info\supermarche\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\Systeme-d'Info\supermarche\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\Systeme-d'Info\supermarche\app\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+#8 D:\Systeme-d'Info\supermarche\app\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+#9 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+#10 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+#11 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Systeme-d'Info\supermarche\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 D:\Systeme-d'Info\supermarche\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\Systeme-d'Info\supermarche\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\Systeme-d'Info\supermarche\system\rewrite.php(44): require_once('D:\\Systeme-d'In...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Systeme-d'Info\supermarche\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Systeme-d'Info\supermarche\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Systeme-d'Info\supermarche\app\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\Systeme-d'Info\supermarche\app\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+#8 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+#9 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+#10 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Systeme-d'Info\supermarche\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\Systeme-d'Info\supermarche\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Systeme-d'Info\supermarche\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Systeme-d'Info\supermarche\system\rewrite.php(44): require_once('D:\\Systeme-d'In...')
+#15 {main}
+CRITICAL - 2026-06-17 06:48:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `caisse`', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Systeme-d\'Info\\supermarche\\public\\index.php')
+ERROR - 2026-06-17 06:48:14 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:111
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(111): SQLite3->__construct('D:\\Systeme-d'In...')
+#1 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#2 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 D:\Systeme-d'Info\supermarche\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 D:\Systeme-d'Info\supermarche\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\Systeme-d'Info\supermarche\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\Systeme-d'Info\supermarche\app\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+#8 D:\Systeme-d'Info\supermarche\app\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+#9 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+#10 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+#11 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Systeme-d'Info\supermarche\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 D:\Systeme-d'Info\supermarche\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\Systeme-d'Info\supermarche\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\Systeme-d'Info\supermarche\system\rewrite.php(44): require_once('D:\\Systeme-d'In...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Systeme-d'Info\supermarche\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Systeme-d'Info\supermarche\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Systeme-d'Info\supermarche\app\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\Systeme-d'Info\supermarche\app\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+#8 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+#9 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+#10 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Systeme-d'Info\supermarche\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\Systeme-d'Info\supermarche\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Systeme-d'Info\supermarche\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Systeme-d'Info\supermarche\system\rewrite.php(44): require_once('D:\\Systeme-d'In...')
+#15 {main}
+CRITICAL - 2026-06-17 06:48:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `caisse`', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Systeme-d\'Info\\supermarche\\public\\index.php')
+DEBUG - 2026-06-17 06:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 06:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 06:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 06:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 06:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-17 06:54:47 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:111
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(111): SQLite3->__construct('D:\\Systeme-d'In...')
+#1 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#2 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 D:\Systeme-d'Info\supermarche\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 D:\Systeme-d'Info\supermarche\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\Systeme-d'Info\supermarche\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\Systeme-d'Info\supermarche\app\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+#8 D:\Systeme-d'Info\supermarche\app\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+#9 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+#10 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+#11 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Systeme-d'Info\supermarche\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 D:\Systeme-d'Info\supermarche\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\Systeme-d'Info\supermarche\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\Systeme-d'Info\supermarche\system\rewrite.php(44): require_once('D:\\Systeme-d'In...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Systeme-d'Info\supermarche\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Systeme-d'Info\supermarche\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Systeme-d'Info\supermarche\app\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\Systeme-d'Info\supermarche\app\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+#8 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+#9 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+#10 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Systeme-d'Info\supermarche\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\Systeme-d'Info\supermarche\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Systeme-d'Info\supermarche\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Systeme-d'Info\supermarche\system\rewrite.php(44): require_once('D:\\Systeme-d'In...')
+#15 {main}
+CRITICAL - 2026-06-17 06:54:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `caisse`', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Systeme-d\'Info\\supermarche\\public\\index.php')
+DEBUG - 2026-06-17 06:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-17 06:55:14 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:111
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(111): SQLite3->__construct('D:\\Systeme-d'In...')
+#1 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#2 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 D:\Systeme-d'Info\supermarche\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 D:\Systeme-d'Info\supermarche\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\Systeme-d'Info\supermarche\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\Systeme-d'Info\supermarche\app\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+#8 D:\Systeme-d'Info\supermarche\app\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+#9 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+#10 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+#11 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Systeme-d'Info\supermarche\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 D:\Systeme-d'Info\supermarche\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\Systeme-d'Info\supermarche\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\Systeme-d'Info\supermarche\system\rewrite.php(44): require_once('D:\\Systeme-d'In...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\Systeme-d'Info\supermarche\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Systeme-d'Info\supermarche\system\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\Systeme-d'Info\supermarche\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Systeme-d'Info\supermarche\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Systeme-d'Info\supermarche\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Systeme-d'Info\supermarche\app\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\Systeme-d'Info\supermarche\app\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+#8 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+#9 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+#10 D:\Systeme-d'Info\supermarche\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Systeme-d'Info\supermarche\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\Systeme-d'Info\supermarche\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Systeme-d'Info\supermarche\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Systeme-d'Info\supermarche\system\rewrite.php(44): require_once('D:\\Systeme-d'In...')
+#15 {main}
+CRITICAL - 2026-06-17 06:55:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `caisse`', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\CaisseModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\CaisseController.php(17): App\Models\CaisseModel->getAllCaisses()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CaisseController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaisseController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Systeme-d\'Info\\supermarche\\public\\index.php')
+DEBUG - 2026-06-17 06:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 06:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 06:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-17 07:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
