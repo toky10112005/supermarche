@@ -5,6 +5,8 @@ CREATE TABLE produit (
     quantite_stock INTEGER NOT NULL
 );
 
+# lk
+
 CREATE TABLE caisse (
     id_caisse INTEGER PRIMARY KEY AUTOINCREMENT,
     numero_caisse TEXT NOT NULL,
